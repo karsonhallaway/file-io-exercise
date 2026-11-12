@@ -46,7 +46,7 @@ highest_revenue_day = max(revenue_per_day, key=revenue_per_day.get)
 
 # === Formatted Summary: ===
 # Writes formatted summary to sales_report.txt
-with open('sales_report.txt', 'w') as file:
+with open('sales_report.txt', 'w', newline='') as file:
     file.write(f"Total Revenue: {total_revenue:.2f}\n")
     file.write("Revenue per Product:\n")
     for product, revenue in revenue_per_product.items():
